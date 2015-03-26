@@ -35,24 +35,24 @@ var = 'Q = 0' if not a >= x else 'Q = 1'
 print(var)
 
 print('CHALLENGE:')
-print('A B C Q')
+print('A & -B | C = Q')
 x,y,z = 3,2,1
 a,b,c = 1,2,3
-if a >= x and b >= y or c >= z:
+if a >= x and not(b >= y) or c >= z:
     print('1 1 1 1')
-if a >= x and b < y or c >= z:
+if a >= x and not(b < y) or c >= z:
     print('1 0 1 1')
-if a >= x and b <= y or c < z:
+if a >= x and not(b <= y) or c < z:
     print ('1 1 0 1')
-if a >= x and b < y or c < z:
+if a >= x and not(b < y) or c < z:
     print('1 0 0 0')
-if a < x and b >= y or c < z:
+if a < x and not(b >= y) or c < z:
     print('0 1 0 0')
-if a < x and b < y and c >= z:
+if a < x and not(b < y) and c >= z:
     print('0 0 1 1')
-if a < x and b < y and c < z:
+if a < x and not(b < y) and c < z:
     print ('0 0 0 0')
-if a < x and b >= y and c >= z:
+if a < x and not(b >= y) and c >= z:
     print('0 1 1 1')
 else:
     print('invalid input')
