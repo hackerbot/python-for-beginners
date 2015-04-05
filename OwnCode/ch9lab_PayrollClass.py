@@ -41,7 +41,7 @@ class Payroll:
             self.totalpay = self.pay
             return 'All together', self.name, 'earned', self.totalpay, 'with no overtime.'
         
-person1 = Payroll('Ninh',60,35) #name,wage,time
+person1 = Payroll('Ninh',60,45) #name,wage,time
 print(person1.pay())
 print(person1.overpay())
 print(person1.totalpay())
