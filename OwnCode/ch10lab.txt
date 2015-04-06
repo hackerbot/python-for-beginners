@@ -1,3 +1,1 @@
-hello world
-this is Ninh
-1234
+Ninh's File for Lab Exercise 10
