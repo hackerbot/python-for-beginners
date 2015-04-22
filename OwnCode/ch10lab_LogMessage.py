@@ -13,13 +13,13 @@
 class LogMessage:
     def __init__(self,filename):
         self.filename = filename
-        print(filename, 'has been initialized and opened.')
+        print(filename, 'has been successfully initialized.')
     def read(self): #read and print
         for line in open(self.filename, 'r'):
             print(line, end = '')
         return ''
     def write(self): #write
-        data = input("What would you like to add the the file?\n")
+        data = input("What would you like to add to the file?\n")
         self.filenamenew = 'new'+self.filename
         buffersize = 100000
         original = open(self.filename, 'r')
@@ -31,7 +31,7 @@ class LogMessage:
             print(buffer, end='')
             output.write('\n'+data) #writes out input to a new line in the file
             break #no infinite loop
-        print('\n Inputed data has been added to the new file', self.filenamenew)
+        print('\nInputed data has been added to the new file', self.filenamenew)
         return '' #to clear none message
 
 file1 = LogMessage('ch10lab.txt')
