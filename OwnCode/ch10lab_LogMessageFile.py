@@ -10,7 +10,7 @@
 #    buffer = input.read(buffersize)
     
 
-class LogMessage:
+class LogMessageFile:
     def __init__(self,filename):
         self.filename = filename
         print(filename, 'has been successfully initialized.')
@@ -34,8 +34,8 @@ class LogMessage:
         print('\nInputed data has been added to the new file', self.filenamenew)
         return '' #to clear none message
 
-file1 = LogMessage('ch10lab.txt')
-file2 = LogMessage('newch10lab.txt')
+file1 = LogMessageFile('ch10lab.txt')
+file2 = LogMessageFile('newch10lab.txt')
 print(file1.filename)
 print(file1.read())
 print(file1.write())

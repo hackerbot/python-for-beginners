@@ -6,7 +6,7 @@ db.execute('create table table1 (field1 text)')
 db.execute('insert into table1 (field1) values ("value1")')
 db.commit()
 
-class SQLDatabaseReadWrite:
+class LogMessageDbSQL:
     def __init__(self,databasename):
         self.databasename = databasename
         db = sqlite3.connect(self.databasename)
@@ -23,10 +23,10 @@ class SQLDatabaseReadWrite:
         data = input("What would you like to add to field1 of table1?\n")
         db.execute('insert into table1 (field1) values ("{}")'.format(data))
         db.commit()
-        print('\nInputed data has been added to the new database', self.databasename)
+        print('\nInputed data has been inserted to the database', self.databasename)
         return '' #to clear none message
 
-database1 = SQLDatabaseReadWrite('database.db')
+database1 = LogMessageDbSQL('database.db')
 print(database1.databasename)
 print(database1.read())
 print(database1.write())
