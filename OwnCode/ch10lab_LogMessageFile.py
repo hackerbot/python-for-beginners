@@ -15,6 +15,8 @@ class LogMessageFile:
         self.filename = filename
         print(filename, 'has been successfully initialized.')
     def read(self): #read and print
+        print()
+        print(self.filename, 'now contains this data:')
         for line in open(self.filename, 'r'):
             print(line, end = '')
         return ''
@@ -31,14 +33,13 @@ class LogMessageFile:
             print(buffer, end='')
             output.write('\n'+data) #writes out input to a new line in the file
             break #no infinite loop
-        print('\nInputed data has been added to the new file', self.filenamenew)
+        print('\n')
+        print(self.filenamenew, 'has been added with new data: "{}"'.format(data))
         return '' #to clear none message
 
 file1 = LogMessageFile('ch10lab.txt')
 file2 = LogMessageFile('newch10lab.txt')
-print(file1.filename)
 print(file1.read())
 print(file1.write())
 #checking work
-print(file2.filename)
 print(file2.read())
