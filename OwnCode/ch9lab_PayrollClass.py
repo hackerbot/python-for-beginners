@@ -46,7 +46,7 @@ print(person1.pay())
 print(person1.overpay())
 print(person1.totalpay())
 
-person2 = Payroll('Hannah',20,60) #name,wage,time
+person2 = Payroll('James',50,45) #name,wage,time
 print(person2.pay())
 print(person2.overpay())
 print(person2.totalpay())
