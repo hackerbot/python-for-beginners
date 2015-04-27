@@ -1,32 +1,21 @@
 print('Fibonacci Sequence')
 #inputs
-a = 0
-b = 1
-c = 2
-d = 3
-e = 5
-f = 8
-g = 13
-
-#sequence
-print(a)
-print(b)
-print(c)
-print(d)
-print(e)
-print(f)
+f0 = 0
+f1 = 1
+x = False
 #sequence loop
-while g < 200:
-    print(g)
-    g += f
-    f += e
-    e += d
-    d += c
-    c += b
-    b += a
-else:
-    print('sequence >= 100')
-    
+while True:
+    fn = f0 + f1
+    f0 = f1
+    f1 = fn
+    if (fn > 100):
+        x = True
+    else:
+        x = False
+    print(fn)
+    if (x == True):
+        break
+
 #correct numbers for verification
 0
 1
