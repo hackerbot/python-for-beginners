@@ -31,10 +31,10 @@ def login():
         
         db.row_factory = sqlite3.Row
         row = db.execute('select id from users where username = ? and password = ?', (username, newpass))
-        if row is None:
+        if row == None and row != newpass:
             print('Sorry, that password doesn\' match the username')
         else:
-            user_id = row.fetchone()['id']
+            user_id = row.fetchone()
             is_logged_in = True
     else:
         print('That user doesn\'t exist. Register it?')
