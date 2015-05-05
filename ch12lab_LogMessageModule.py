@@ -1,9 +1,9 @@
 def LogFile():
-    from OwnCode.ch10lab_LogMessageFile import LogMessageFile
+    from ch10lab_LogMessageFile import LogMessageFile
     print(LogMessageFile)
 
 def LogDb():
-    from OwnCode.ch11lab_LogMessageDbSQL import LogMessageDbSQL
+    from ch11lab_LogMessageDbSQL import LogMessageDbSQL
     print(LogMessageDbSQL)
     
 def select():
