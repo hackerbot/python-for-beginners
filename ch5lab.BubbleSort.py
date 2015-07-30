@@ -2,9 +2,9 @@ print('Bubble Sort')
 list = [8,7,12,4,9,6,5]
 print(list)
 
-list3 = sorted(list) #list2 = list sorted
+list3 = sorted(list) # list2 = list sorted
 
-l = len(list) #length of list
+l = len(list) # length of list
 
 a = 0
 while l >= a:

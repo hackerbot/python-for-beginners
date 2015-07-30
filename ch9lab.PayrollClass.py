@@ -1,16 +1,16 @@
-#name
-#hourly wage
-#hours/week
-#overtime? >40
-#1.5xwage for overtime
+# name
+# hourly wage
+# hours/week
+# overtime? >40
+# 1.5xwage for overtime
 
-#print name
-#print hours worked at what wage
-#print total wage earned
+# print name
+# print hours worked at what wage
+# print total wage earned
 
-#repeat, but for overtime
+# repeat, but for overtime
 
-#total earned
+# total earned
 
 class Payroll:
     def __init__(self,name,wage,time):
@@ -18,20 +18,20 @@ class Payroll:
         self.wage = wage
         self.time = time
         if self.time > 40:
-            self.overtime = self.time - 40 #overtime
+            self.overtime = self.time - 40 # overtime
         else:
             self.overtime = 0
-    def pay(self): #regular pay
+    def pay(self): # regular pay
         if 40 >= self.time:
             self.pay = self.wage * self.time
         else:
             self.pay = self.wage * 40
         return self.name, 'earned', self.pay, 'during his regular work.'
-    def overpay(self): #overtime pay
+    def overpay(self): # overtime pay
         if 40 >= self.time:
             return self.name, 'did not work overtime.'
         else:
-            self.overpay = self.wage * self.overtime * 1.5 #50% wage increase
+            self.overpay = self.wage * self.overtime * 1.5 # 50% wage increase
             return self.name, 'earned', self.overpay, 'in overtime.'
     def totalpay(self):
         if  self.time > 40:
@@ -41,12 +41,12 @@ class Payroll:
             self.totalpay = self.pay
             return 'All together', self.name, 'earned', self.totalpay, 'with no overtime.'
         
-person1 = Payroll('Ninh',50,40) #name,wage,time
+person1 = Payroll('Ninh',50,40) # name,wage,time
 print(person1.pay())
 print(person1.overpay())
 print(person1.totalpay())
 
-person2 = Payroll('James',50,45) #name,wage,time
+person2 = Payroll('James',50,45) # name,wage,time
 print(person2.pay())
 print(person2.overpay())
 print(person2.totalpay())

@@ -1,7 +1,7 @@
 print('AND:')
 print('A B Q')
-x,y = 2,3 #comparing values
-a,b = 5,2 #input values
+x,y = 2,3 # comparing values
+a,b = 5,2 # input values
 if a >= x and b < y:
     print('1 1 1')
 elif a < x and b >= y:
@@ -15,8 +15,8 @@ else:
 
 print('OR:')
 print('A B Q')
-x,y = 1,2 #comparing values
-a,b = 2,1 #input values
+x,y = 1,2 # comparing values
+a,b = 2,1 # input values
 if a >= x or b >= y:
     print('1 1 1')
 elif a < x or b < y:
@@ -29,8 +29,8 @@ else:
     print('invalid input')
 
 print('NOT:')
-x = 1 #comparing values
-a = 2 #input values
+x = 1 # comparing values
+a = 2 # input values
 var = 'Q = 0' if not a >= x else 'Q = 1'
 print(var)
 

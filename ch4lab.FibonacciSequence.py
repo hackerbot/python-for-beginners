@@ -1,9 +1,9 @@
 print('Fibonacci Sequence')
-#inputs
+# inputs
 f0 = 0
 f1 = 1
 x = False
-#sequence loop
+# sequence loop
 while True:
     fn = f0 + f1
     f0 = f1
@@ -16,7 +16,7 @@ while True:
     if (x == True):
         break
 
-#correct numbers for verification
+# correct numbers for verification
 0
 1
 2

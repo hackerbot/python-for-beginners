@@ -16,7 +16,7 @@ print(var)
 print ('AND')
 print('A B Q')
 
-a,b,q = 3,2,1 #firstrow
+a,b,q = 3,2,1 # firstrow
 if a >= b and b >= q and q < a: print('1 1 1')
 elif a >= b and b >= q and q >= a: print('1 1 0')
 elif a < b and b >= q and q < a: print('0 1 1')
@@ -27,7 +27,7 @@ elif a < b and b < q and q < a: print('0 0 1')
 elif a < b and b < q and q >= a: print('0 0 0')
 else: print('default')
 
-a,b,q = 1,2,3 #secondrow
+a,b,q = 1,2,3 # secondrow
 if a >= b and b >= q and q < a: print('1 1 1')
 elif a >= b and b >= q and q >= a: print('1 1 0')
 elif a < b and b >= q and q < a: print('0 1 1')
@@ -38,7 +38,7 @@ elif a < b and b < q and q < a: print('0 0 1')
 elif a < b and b < q and q >= a: print('0 0 0')
 else: print('default')
     
-a,b,q = 2,1,3 #thirdrow
+a,b,q = 2,1,3 # thirdrow
 if a >= b and b >= q and q < a: print('1 1 1')
 elif a >= b and b >= q and q >= a: print('1 1 0')
 elif a < b and b >= q and q < a: print('0 1 1')
@@ -49,7 +49,7 @@ elif a < b and b < q and q < a: print('0 0 1')
 elif a < b and b < q and q >= a: print('0 0 0')
 else: print('default')
 
-a,b,q = 1,2,2 #fourthrow
+a,b,q = 1,2,2 # fourthrow
 if a >= b and b >= q and q < a: print('1 1 1')
 elif a >= b and b >= q and q >= a: print('1 1 0')
 elif a < b and b >= q and q < a: print('0 1 1')
@@ -63,7 +63,7 @@ else: print('default')
 print ('OR')
 print('A B Q')
 
-a,b,q = 3,2,1 #firstrow
+a,b,q = 3,2,1 # firstrow
 if a >= 10 or b >= 20 or q < 30: print('1 1 1')
 elif a >= b or b >= q or q >= a: print('1 1 0')
 elif a < b or b >= q or q < a: print('0 1 1')
@@ -74,7 +74,7 @@ elif a < b or b < q or q < a: print('0 0 1')
 elif a < b or b < q or q >= a: print('0 0 0')
 else: print('default')
 
-a,b,q = 1,2,3 #secondrow
+a,b,q = 1,2,3 # secondrow
 if a >= b or b >= q or q < a: print('1 1 1')
 elif a >= b or b >= q or q >= a: print('1 1 0')
 elif a < b or b >= q or q < a: print('0 1 1')
@@ -85,7 +85,7 @@ elif a < b or b < q or q < a: print('0 0 1')
 elif a < b or b < q or q >= a: print('0 0 0')
 else: print('default')
     
-a,b,q = 2,1,3 #thirdrow
+a,b,q = 2,1,3 # thirdrow
 if a >= b or b >= q or q < a: print('1 1 1')
 elif a >= b or b >= q or q >= a: print('1 1 0')
 elif a < b or b >= q or q < a: print('0 1 1')
@@ -96,7 +96,7 @@ elif a < b or b < q or q < a: print('0 0 1')
 elif a < b or b < q or q >= a: print('0 0 0')
 else: print('default')
 
-a,b,q = 1,2,2 #fourthrow
+a,b,q = 1,2,2 # fourthrow
 if a >= b or b >= q or q < a: print('1 1 1')
 elif a >= b or b >= q or q >= a: print('1 1 0')
 elif a < b or b >= q or q < a: print('0 1 1')
